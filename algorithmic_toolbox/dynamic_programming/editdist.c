@@ -1,16 +1,39 @@
 #include <stdio.h>
 #include <string.h>
 
-#define STRMAX 100 /* maximum string size */
+/* maximum string size */
+#define STRMAX 100
+
+/* the keyword typeof is not available in programs compiled with -std */
 #define typeof __typeof__
+
+/* 
+ * _cmp: compares two values of the same or compatible types.
+ */
 #define _cmp(x, y, op) ((x) op (y) ? (x) : (y))
-#define _cmp_once(x, y, op) ({	\
+
+/* 
+ * _cmp_once: compares two values of the same or compatible types
+ * avoiding multiple evaluations of the arguments.
+ */
+#define _cmp_once(x, y, op) ({  \
 		typeof(x) _x = (x);     \
 		typeof(y) _y = (y);     \
 		_cmp(_x, _y, op); })
+
+/* 
+ * min: returns the minimum of two values of the same or compatible types.
+ */
 #define min(x, y) _cmp(x, y, <)
+
+/* 
+ * min: returns the minimum of three values of the same or compatible types.
+ */
 #define min3(x, y, z) min((typeof(x))min(x, y), z)
 
+/*
+ * editdist: computes the edit distance between two strings.
+ */
 unsigned short editdist(const char *cs, const char *ct)
 {
     static unsigned short d[STRMAX+1][STRMAX+1];
