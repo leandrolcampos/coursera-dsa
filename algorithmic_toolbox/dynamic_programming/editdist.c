@@ -41,7 +41,7 @@
 #define min(x, y) _cmp_once(x, y, <)
 
 /* 
- * min: returns the minimum of three values of the same or compatible types.
+ * min3: returns the minimum of three values of the same or compatible types.
  */
 #define min3(x, y, z) min((typeof(x))min(x, y), z)
 
