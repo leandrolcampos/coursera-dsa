@@ -38,7 +38,7 @@
 /* 
  * min: returns the minimum of two values of the same or compatible types.
  */
-#define min(x, y) _cmp(x, y, <)
+#define min(x, y) _cmp_once(x, y, <)
 
 /* 
  * min: returns the minimum of three values of the same or compatible types.
