@@ -13,7 +13,6 @@
  * ----------------------------------------------------------------------- */
 
 #include <stdio.h>
-#include <string.h>
 
 /* maximum sequence size */
 #define SEQMAX 100
