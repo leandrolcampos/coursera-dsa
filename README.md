@@ -4,11 +4,11 @@
 
 **Created by:** University of California, San Diego, and National Research University Higher School of Economics
 
-This repository contains my solutions written in C to the programming assignments of the [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
+This repository contains my solutions to the programming assignments of the [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
 
 **Disclaimer:** If you are enrolled in this specialization or in one of its courses, you must read this [Honor Code](https://www.coursera.org/about/terms/honorcode).
 
-# Course 1. Algorithmic Toolbox
+## Course 1. Algorithmic Toolbox
 
 ### Week 1. Programming Challenges
 
@@ -37,3 +37,13 @@ This repository contains my solutions written in C to the programming assignment
 - [Collecting Signatures](/algorithmic_toolbox/greedy_algorithms/covering_segments.c)
 - [Maximum Number of Prizes](/algorithmic_toolbox/greedy_algorithms/different_summands.c)
 - [Maximum Salary](/algorithmic_toolbox/greedy_algorithms/largest_number.c)
+
+### Week 4. Divide-and-Conquer
+
+- [Programming Assignment](/algorithmic_toolbox/divide_and_conquer/Programming%20Assignment%204.pdf)
+- [Binary Search](/algorithmic_toolbox/divide_and_conquer/binary_search.c)
+- [Majority Element](/algorithmic_toolbox/divide_and_conquer/majority_element.c)
+- [Improving Quick Sort](/algorithmic_toolbox/divide_and_conquer/sorting.c)
+- [Number of Inversions](/algorithmic_toolbox/divide_and_conquer/inversions.c)
+- [Organizing a Lottery](/algorithmic_toolbox/divide_and_conquer/points_and_segments.c)
+- [Closest Points](/algorithmic_toolbox/divide_and_conquer/closest.c)
