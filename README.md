@@ -18,7 +18,7 @@ This repository contains my solutions written in C to the programming assignment
 
 ### Week 2. Algorithmic Warm-up
 
-- [Programming Assignment](/algorithmic_toolbox/programming_challenges/Programming%20Assignment%202.pdf)
+- [Programming Assignment](/algorithmic_toolbox/algorithmic_warmup/Programming%20Assignment%202.pdf)
 - [Fibonacci Number](/algorithmic_toolbox/algorithmic_warmup/fibonacci.c)
 - [Last Digit of a Large Fibonacci Number](/algorithmic_toolbox/algorithmic_warmup/fibonacci_last_digit.c)
 - [Greatest Common Divisor](/algorithmic_toolbox/algorithmic_warmup/gcd.c)
