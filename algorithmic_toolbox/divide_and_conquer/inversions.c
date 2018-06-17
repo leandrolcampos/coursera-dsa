@@ -1,163 +1,96 @@
-/*
- * Author: Leandro Augusto Lacerda Campos <llacerdacampos@gmail.com>
+/* ----------------------------------------------------------------------- *
  * 
- * Data Structures and Algorithms Specialization,
- * by University of California, San Diego, 
- * and National Research University Higher School of Economics
+ *   Author: Leandro Augusto Lacerda Campos <llacerdacampos@gmail.com>
  * 
- * Course 1: Algorithmic Toolbox
+ *   Data Structures and Algorithms Specialization,
+ *   by University of California, San Diego, 
+ *   and National Research University Higher School of Economics
  * 
- * Solution for Number of Inversions Problem
- */
+ *   Course 1: Algorithmic Toolbox
+ * 
+ *   Solution for Number of Inversions Problem
+ * 
+ * ----------------------------------------------------------------------- */
 
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h> /* it's needed because of memcpy */
+#include <stdlib.h>
 
-#define NAIVE_SOLUTION
+/*
+ * merge: merges the sequences base[0] <= ... <= base[mid-1] and base[mid] <= 
+ * ... <= base[nel-1] into base[0] <= ... <= base[nel-1] and returns the 
+ * number of inversions needed.
+ */
+unsigned long merge(unsigned int *base, unsigned int nel, unsigned int mid)
+{
+    unsigned int *buf, *bufp, *p, *q, *endp, *endq;
+    unsigned long inv;
 
-unsigned long long
-merge_sort(const unsigned int *, const unsigned int *);
-unsigned long long
-merge(const unsigned int *, const unsigned int *, const unsigned int *);
-void stress_test(unsigned int);
+    bufp = buf = malloc(nel * sizeof(*base));
+    p = base;
+    q = base + mid;
+    endp = base + (mid - 1);
+    endq = base + (nel - 1);
+    inv = 0;
+    while (p <= endp && q <= endq) {
+        if (*p <= *q) {
+            *bufp++ = *p++;
+        } else {
+            *bufp++ = *q++;
+            inv += endp - p + 1;
+        }
+    }
+    while (p <= endp)
+        *bufp++ = *p++;
+    while (q <= endq)
+        *bufp++ = *q++;
+    bufp = buf;
+    while (base <= endq)
+        *base++ = *bufp++;
+    free(buf);
+    return inv;
+}
+
+/*
+ * msort: sorts the sequence base[0], ..., base[nel-1] in a non-decreasing 
+ * order and returns the number of inversions needed.
+ */
+unsigned long msort(unsigned int *base, unsigned int nel)
+{
+    unsigned int mid;
+    unsigned long inv;
+
+    if (nel == 1)
+        return 0;
+    mid = nel / 2;
+    inv = msort(base, mid);
+    inv += msort(base + mid, nel - mid);
+    inv += merge(base, nel, mid);
+    return inv;
+}
+
+/*
+ * print: prints the sequence base[0], ..., base[nel-1].
+ */
+void print(const unsigned int *base, unsigned int nel)
+{
+    while (nel--)
+        printf("%u ", *base++);
+    putchar('\n');
+}
 
 int main()
 {
-#ifdef STRESS_TEST
-    stress_test(3);
-#else
-    unsigned int n;
+    unsigned int nel;
     unsigned int *base;
     unsigned int i;
-#if defined(NAIVE_SOLUTION)
-    unsigned int j;
-#endif
-    unsigned long long inversions;
+    unsigned long inv;
 
-    scanf("%u", &n);
-    base = malloc(n * sizeof(unsigned int));
-    for (i = 0; i < n; i++)
+    scanf("%u", &nel);
+    base = malloc(nel * sizeof(unsigned int));
+    for (i = 0; i < nel; i++)
         scanf("%u", &base[i]);
-#if defined(NAIVE_SOLUTION)
-    inversions = 0;
-    for (i = 0; i < n; i++)
-        for (j = i + 1; j < n; j++)
-            if (base[i] > base[j])
-                inversions++;
-#else
-    inversions = merge_sort(&base[0], &base[n - 1]);
-#endif
-    printf("%llu\n", inversions);
+    inv = msort(base, nel);
+    printf("%lu\n", inv);
     free(base);
-#endif
     return 0;
-}
-
-/*
- * merge_sort: sorts the sequence of integers *left, ..., *right in a non-decreasing order
- * and returns the number of inversions needed to order the sequence.
- */
-unsigned long long
-merge_sort(const unsigned int *left, const unsigned int *right)
-{
-    const unsigned int *middle;
-    unsigned long long inversion;
-
-    inversion = 0;
-    if (left < right)
-    {
-        middle = left + (right - left) / 2;
-        inversion += merge_sort(left, middle);
-        inversion += merge_sort(middle + 1, right);
-        inversion += merge(left, middle, right);
-    }
-    return inversion;
-}
-
-/*
- * merge: merges two ordered sequences, *left <= ...<= *middle and *(middle + 1) <= ...<= *right, 
- * into another ordered sequence *left <= ...<= *right.
- */
-unsigned long long
-merge(const unsigned int *left, const unsigned int *middle, const unsigned int *right)
-{
-    unsigned long long inversions;
-    unsigned int *lt, *mid, *rt;
-    unsigned int *el;
-    unsigned int tmp;
-
-    inversions = 0;
-    lt = (unsigned int *)left;
-    mid = (unsigned int *)middle;
-    rt = mid + 1;
-    if (*mid == *rt)
-        return 0;
-    while (lt <= mid && rt <= right)
-    {
-        if (*lt <= *rt)
-        {
-            lt++;
-        }
-        else
-        {
-            inversions += rt - lt;
-            tmp = *rt;
-            memcpy(lt + 1, lt, (rt - lt) * sizeof(unsigned int));
-            *lt = tmp;
-            lt++, mid++, rt++;
-        }
-    }
-    return inversions;
-}
-
-/*
- * stress_test: proves that the solution implemented with a naive solution.
- */
-#define MAX_ITER 100
-#define MIN_SEQUENCE_SIZE 1          /* 1 */
-#define MAX_SEQUENCE_SIZE 100000     /* 100000 */
-#define MIN_INTEGER_VALUE 1          /* 1 */
-#define MAX_INTEGER_VALUE 1000000000 /* 1000000000 */
-void stress_test(unsigned int seed)
-{
-    unsigned int n;
-    unsigned int *base;
-    unsigned int iter, i, j;
-    unsigned long long r_inversions, t_inversions;
-
-    srand(seed);
-    iter = 0;
-    while (iter < MAX_ITER)
-    {
-        printf("test %u\n", iter + 1);
-        n = rand() % (MAX_SEQUENCE_SIZE - MIN_SEQUENCE_SIZE) + MIN_SEQUENCE_SIZE;
-        base = malloc(n * sizeof(unsigned int));
-        for (i = 0; i < n; i++)
-            base[i] = rand() % (MAX_INTEGER_VALUE - MIN_INTEGER_VALUE) + MIN_INTEGER_VALUE;
-        t_inversions = 0;
-        for (i = 0; i < n; i++)
-            for (j = i + 1; j < n; j++)
-                if (base[i] > base[j])
-                    t_inversions++;
-        r_inversions = merge_sort(&base[0], &base[n - 1]);
-        if (r_inversions == t_inversions)
-        {
-            printf("ok!\n");
-            printf("result = %llu\n", r_inversions);
-            printf("test = %llu\n", t_inversions);
-        }
-        else
-        {
-            printf("error!\n");
-            for (i = 0; i < n; i++)
-                printf("%u ", base[i]);
-            printf("\nresult = %llu\n", r_inversions);
-            printf("test = %llu\n", t_inversions);
-            break;
-        }
-        free(base);
-        iter++;
-        putchar('\n');
-    }
 }
