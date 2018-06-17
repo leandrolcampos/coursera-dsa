@@ -8,7 +8,7 @@ This repository contains my solutions written in C to the programming assignment
 
 **Disclaimer:** If you are enrolled in this specialization or in one of its courses, you must read this [Honor Code](https://www.coursera.org/about/terms/honorcode).
 
-# [Course 1. Algorithmic Toolbox](/algorithmic_toolbox/)
+# Course 1. Algorithmic Toolbox
 
 ### Week 1. Programming Challenges
 
@@ -27,3 +27,13 @@ This repository contains my solutions written in C to the programming assignment
 - [Last Digit of the Sum of Fibonacci Numbers](/algorithmic_toolbox/algorithmic_warmup/fibonacci_sum_last_digit.c)
 - [Last Digit of the Sum of Fibonacci Numbers Again](/algorithmic_toolbox/algorithmic_warmup/fibonacci_partial_sum.c)
 - [Last Digit of the Sum of Squares of Fibonacci Numbers](/algorithmic_toolbox/algorithmic_warmup/fibonacci_sum_squares.c)
+
+### Week 3. Greedy Algorithms
+
+- [Programming Assignment](/algorithmic_toolbox/greedy_algorithms/Programming%20Assignment%203.pdf)
+- [Money Change](/algorithmic_toolbox/greedy_algorithms/change.c)
+- [Maximum Value of the Loot](/algorithmic_toolbox/greedy_algorithms/fractional_knapsack.c)
+- [Maximum Advertisement Revenue](/algorithmic_toolbox/greedy_algorithms/dot_product.c)
+- [Collecting Signatures](/algorithmic_toolbox/greedy_algorithms/covering_segments.c)
+- [Maximum Number of Prizes](/algorithmic_toolbox/greedy_algorithms/different_summands.c)
+- [Maximum Salary](/algorithmic_toolbox/greedy_algorithms/largest_number.c)
