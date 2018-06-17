@@ -47,3 +47,12 @@ This repository contains my solutions to the programming assignments of the [Dat
 - [Number of Inversions](/algorithmic_toolbox/divide_and_conquer/inversions.c)
 - [Organizing a Lottery](/algorithmic_toolbox/divide_and_conquer/points_and_segments.c)
 - [Closest Points](/algorithmic_toolbox/divide_and_conquer/closest.c)
+
+### Week 5. Dynamic Programming 1
+
+- [Programming Assignment](/algorithmic_toolbox/dynamic_programming/Programming%20Assignment%205.pdf)
+- [Money Change Again](/algorithmic_toolbox/dynamic_programming/change_dp.c)
+- [Primitive Calculator](/algorithmic_toolbox/dynamic_programming/primitive_calculator.c)
+- [Edit Distancen](/algorithmic_toolbox/dynamic_programming/editdist.c)
+- [Longest Common Subsequence of Two Sequences](/algorithmic_toolbox/dynamic_programming/lcs2.c)
+- [Longest Common Subsequence of Three Sequences](/algorithmic_toolbox/dynamic_programming/lcs3.c)
