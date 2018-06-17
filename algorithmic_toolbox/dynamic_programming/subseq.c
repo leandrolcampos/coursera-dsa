@@ -46,13 +46,9 @@
 unsigned short lcslen(const int *xs, const int *ys, 
                       unsigned short n, unsigned short m)
 {
-    unsigned short d[SEQMAX+1][SEQMAX+1];
+    unsigned short d[SEQMAX+1][SEQMAX+1] = { 0 };
     unsigned short i, j;
 
-    for (i = 0; i <= n; i++)
-        d[i][0] = 0;
-    for (j = 1; j <= m; j++)
-        d[0][j] = 0;
     for (j = 1; j <= m; j++)
         for (i = 1; i <= n; i++) {
             if (xs[i-1] == ys[j-1])
