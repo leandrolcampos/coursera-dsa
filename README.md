@@ -62,3 +62,10 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Edit Distancen](/algorithmic_toolbox/dynamic_programming/editdist.c)
 - [Longest Common Subsequence of Two Sequences](/algorithmic_toolbox/dynamic_programming/lcs2.c)
 - [Longest Common Subsequence of Three Sequences](/algorithmic_toolbox/dynamic_programming/lcs3.c)
+
+### Week 6. Dynamic Programming 2
+
+- [Programming Assignment](/algorithmic_toolbox/dynamic_programming/Programming%20Assignment%206.pdf)
+- [Maximum Amount of Gold](/algorithmic_toolbox/dynamic_programming/knapsack.c)
+- [Partitioning Souvenirs](/algorithmic_toolbox/dynamic_programming/partition3.c)
+- [Maximum Value of an Arithmetic Expression](/algorithmic_toolbox/dynamic_programming/placing_parentheses.c)
