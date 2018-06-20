@@ -59,7 +59,7 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Programming Assignment](/algorithmic_toolbox/dynamic_programming/Programming%20Assignment%205.pdf)
 - [Money Change Again](/algorithmic_toolbox/dynamic_programming/change_dp.c)
 - [Primitive Calculator](/algorithmic_toolbox/dynamic_programming/primitive_calculator.c)
-- [Edit Distancen](/algorithmic_toolbox/dynamic_programming/editdist.c)
+- [Edit Distance](/algorithmic_toolbox/dynamic_programming/editdist.c)
 - [Longest Common Subsequence of Two Sequences](/algorithmic_toolbox/dynamic_programming/lcs2.c)
 - [Longest Common Subsequence of Three Sequences](/algorithmic_toolbox/dynamic_programming/lcs3.c)
 
