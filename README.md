@@ -69,3 +69,10 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Maximum Amount of Gold](/algorithmic_toolbox/dynamic_programming/knapsack.c)
 - [Partitioning Souvenirs](/algorithmic_toolbox/dynamic_programming/partition3.c)
 - [Maximum Value of an Arithmetic Expression](/algorithmic_toolbox/dynamic_programming/placing_parentheses.c)
+
+## Course 2. Data Structures
+
+### Week 1. Basic Data Structures
+
+- [Programming Assignment](/data_structures/basic_data_structures/Programming%20Assignment%201.pdf)
+- [Check Brackets in the Code](/data_structures/basic_data_structures/check_brackets.c)
