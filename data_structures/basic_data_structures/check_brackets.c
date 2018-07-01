@@ -99,7 +99,7 @@ int pop(Stack *stack, Item *item)
 /*
  * isempty: returns -1 if there are any items in stack and 0 otherwise
  */
-int isempty(const Stack *stack)
+inline int isempty(const Stack *stack)
 {
     return (stack->nit == 0);
 }
