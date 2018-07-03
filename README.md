@@ -76,4 +76,4 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 
 - [Programming Assignment](/data_structures/basic_data_structures/Programming%20Assignment%201.pdf)
 - [Check Brackets in the Code](/data_structures/basic_data_structures/check_brackets.c)
-- [Compute tree height](/data_structures/basic_data_structures/tree_height.c)
+- [Compute Tree Height](/data_structures/basic_data_structures/tree_height.c)
