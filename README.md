@@ -6,7 +6,7 @@
 
 This repository contains my solutions to the programming assignments of the [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
 
-To compile these solutions, I used GCC 4.2.1 with the following command line:
+To compile these solutions, I used GCC 4.2.1 (course 1) and 8.1.0 with the following command line:
 
 ```
 $ gcc -pipe -O2 -std=c11 <filename> -lm
