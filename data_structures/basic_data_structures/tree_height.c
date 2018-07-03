@@ -252,7 +252,7 @@ int main()
     }
     treep = buildtree(nnodes, val, parent_idx);
     printf("%u\n", height(treep, treep->root_idx));
-    freeall(treep);
+    treep = freeall(treep);
     parent_idx = efree(parent_idx);
     val = efree(val);
     exit(0);
