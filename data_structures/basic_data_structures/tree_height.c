@@ -70,7 +70,7 @@ struct Tree {
 };
 
 /* 
- * emalloc: allocates n bytes memory or print a message if an error occurs
+ * emalloc: allocates n bytes of memory or print a message if an error occurs
  */
 void *emalloc(size_t nbytes)
 {
