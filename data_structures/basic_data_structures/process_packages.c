@@ -76,7 +76,7 @@ time processor(Packet *base, size_t nel, size_t bufsiz)
     if (nel == 0)
         return 0;
     if (bufsiz == 0) {
-        printf("the size of the buffer should be 1 or more\n");
+        printf("the size of the buffer should be equal or greater than 1\n");
         exit(1);
     }
     clock = 0;
