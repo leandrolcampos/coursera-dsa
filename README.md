@@ -78,3 +78,8 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Check Brackets in the Code](/data_structures/basic_data_structures/check_brackets.c)
 - [Compute Tree Height](/data_structures/basic_data_structures/tree_height.c)
 - [Network Packet Processing Simulation](/data_structures/basic_data_structures/process_packages.c)
+
+### Week 2. Priority Queues and Disjoint Sets
+
+- [Programming Assignment](/data_structures/pqueues_dsets/Programming%20Assignment%202.pdf)
+- [Convert Array Into Heap](/data_structures/pqueues_dsets/build_heap.c)
