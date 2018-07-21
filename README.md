@@ -84,3 +84,4 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Programming Assignment](/data_structures/pqueues_dsets/Programming%20Assignment%202.pdf)
 - [Convert Array Into Heap](/data_structures/pqueues_dsets/build_heap.c)
 - [Parallel Processing](/data_structures/pqueues_dsets/job_queue.c)
+- [Merging Tables](/data_structures/pqueues_dsets/merging_tables.c)
