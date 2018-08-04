@@ -85,3 +85,8 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Convert Array Into Heap](/data_structures/pqueues_dsets/build_heap.c)
 - [Parallel Processing](/data_structures/pqueues_dsets/job_queue.c)
 - [Merging Tables](/data_structures/pqueues_dsets/merging_tables.c)
+
+### Week 3. Hash Tables
+
+- [Programming Assignment](/data_structures/hash_tables/Programming%20Assignment%203.pdf)
+- [Phone Book](/data_structures/hash_tables/phone_book.c)
