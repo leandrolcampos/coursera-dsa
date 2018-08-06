@@ -91,4 +91,4 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Programming Assignment](/data_structures/hash_tables/Programming%20Assignment%203.pdf)
 - [Phone Book](/data_structures/hash_tables/phone_book.c)
 - [Hashing With Chains](/data_structures/hash_tables/hash_chains.c)
-- [Find Pattern in Text](/data_structures/hash_tables/has_substring.c)
+- [Find Pattern in Text](/data_structures/hash_tables/hash_substring.c)
