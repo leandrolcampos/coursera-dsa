@@ -79,7 +79,11 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Compute Tree Height](/data_structures/basic_data_structures/tree_height.c)
 - [Network Packet Processing Simulation](/data_structures/basic_data_structures/process_packages.c)
 
-### Week 2. Priority Queues and Disjoint Sets
+### Week 2. Dynamic Arrays and Amortized Analysis
+
+- There was no programming assignment this week.
+
+### Week 3. Priority Queues and Disjoint Sets
 
 - [Programming Assignment](/data_structures/pqueues_dsets/Programming%20Assignment%202.pdf)
 - [Convert Array Into Heap](/data_structures/pqueues_dsets/build_heap.c)
@@ -92,3 +96,14 @@ $ gcc -pipe -O2 -std=c11 <filename> -lm
 - [Phone Book](/data_structures/hash_tables/phone_book.c)
 - [Hashing With Chains](/data_structures/hash_tables/hash_chains.c)
 - [Find Pattern in Text](/data_structures/hash_tables/hash_substring.c)
+
+### Week 5. Binary Search Trees 1
+
+- There was no programming assignment this week.
+
+### Week 6. Binary Search Trees 2
+
+- [Programming Assignment](/data_structures/bst/Programming%20Assignment%204.pdf)
+- [Binary Tree Traversals](/data_structures/bst/tree_orders.c)
+- [Is It a Binary Search Tree?](/data_structures/bst/is_bst.c)
+- [Is It a Binary Search Tree? Hard Version](/data_structures/bst/is_bst_hard.c)
