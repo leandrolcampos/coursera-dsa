@@ -12,7 +12,7 @@ To compile these solutions, I used GCC 4.2.1 (course 1) and 8.1.0 with the follo
 $ gcc -pipe -O2 -std=c11 <filename> -lm
 ```
 
-**Disclaimer:** If you are enrolled in this specialization or in one of its courses, you must read this [Honor Code](https://www.coursera.org/about/terms/honorcode).
+**Disclaimer:** If you are enrolled in this specialization or in one of its courses, do not access the content of this repository.
 
 ## Course 1. Algorithmic Toolbox
 
