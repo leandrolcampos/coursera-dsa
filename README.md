@@ -4,7 +4,7 @@
 
 **Created by:** University of California, San Diego, and National Research University Higher School of Economics
 
-This repository contains my solutions to the programming assignments of the [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
+This repository contains my solutions to some programming assignments of the first two courses of [Data Structures and Algorithms Specialization](https://www.coursera.org/specializations/data-structures-algorithms).
 
 To compile these solutions, I used GCC 4.2.1 (course 1) and 8.1.0 with the following command line:
 
